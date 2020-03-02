@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: idempotent-test
+  datasource:
+    url: jdbc:mysql://192.168.31.72:3306/i_test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    minimum-idle: 5
+    maximum-pool-size: 100
+    idle-timeout: 30000
+    max-lifetime: 1800000
+    connection-timeout: 30000
+    connection-test-query: SELECT 1
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000 #连接超时 毫秒
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #加了这个配置之后就可以直接把下划线分隔的库表字段自动转换为camel格式，不再需要ResultMap
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    # 重试消息提供者的组定义
+    group: retry-test-group
+    
