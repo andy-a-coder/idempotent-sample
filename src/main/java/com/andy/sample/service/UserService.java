@@ -13,4 +13,6 @@ public interface UserService {
     public int saveUserAccount2(UserAccountDto userAccount);
 
     public int saveUserAccount3(UserAccountDto userAccount);
+
+    public int test(UserAccountDto userAccount);
 }
