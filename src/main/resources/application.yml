@@ -22,9 +22,4 @@ spring:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true  #加了这个配置之后就可以直接把下划线分隔的库表字段自动转换为camel格式，不再需要ResultMap
-rocketmq:
-  name-server: localhost:9876
-  producer:
-    # 重试消息提供者的组定义
-    group: retry-test-group
     
