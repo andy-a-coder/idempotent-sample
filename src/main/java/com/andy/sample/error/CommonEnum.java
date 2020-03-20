@@ -7,7 +7,7 @@ package com.andy.sample.error;
  */
 public enum CommonEnum {
 
-    REQUEST_SUCCESS("request success", "2001"),// 为与sps保持一致，这里将成功的定义成2001
+    REQUEST_SUCCESS("request success", "2000"),
     NO_HANDLER_EXCEPTIONS("unkown system error", "9998"),
     SYS_ERROR("system error", "9999"),
     ;
