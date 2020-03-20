@@ -2,7 +2,7 @@ package com.andy.sample.error;
 
 /**
  * 通用枚举定义
- * @author huangxiaohui
+ * @author andy
  *
  */
 public enum CommonEnum {
